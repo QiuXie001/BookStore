@@ -8,6 +8,6 @@ namespace BookStore.Domain
 {
     public class ErrorMessage
     {
-        public string ErrorMsg { get; set; }
+        public required string ErrorMsg { get; set; }
     }
 }
