@@ -1,5 +1,5 @@
 {
-    "version": "0.2.0",
+    "version": "2.0.0",
     "configurations": [
         {
             // 使用 IntelliSense 找出 C# 调试存在哪些属性
@@ -9,12 +9,12 @@
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
-            "requireExactSource": false,
             // 如果已更改目标框架，请确保更新程序路径。
             "program": "${workspaceFolder}/BookStore/bin/Debug/net8.0/BookStore.dll",
             "args": [],
             "cwd": "${workspaceFolder}/BookStore",
             "stopAtEntry": false,
+            "requireExactSource": false,
             // 启用在启动 ASP.NET Core 时启动 Web 浏览器。有关详细信息: https://aka.ms/VSCode-CS-LaunchJson-WebBrowser
             "serverReadyAction": {
                 "action": "openExternally",

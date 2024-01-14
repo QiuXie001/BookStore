@@ -5,15 +5,14 @@ namespace BookStore.DBStandard.Models;
 
 public partial class Custom
 {
-    public int CustomId { get; set; }
+    public int Id { get; set; }
+    public string Name { get; set; } = null!;
+    public string Password { get; set; } = null!;
 
-    public string CustomPassword { get; set; } = null!;
+    public string? Age { get; set; }
 
-    public string? CustomAge { get; set; }
+    public string Telephone { get; set; } = null!;
 
-    public string CustomTelephone { get; set; } = null!;
+    public string? IdentityId { get; set; }
 
-    public string? AdminIdentityId { get; set; }
-
-    public string CustomName { get; set; } = null!;
 }
