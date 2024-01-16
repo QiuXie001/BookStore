@@ -16,41 +16,40 @@ namespace BookStore.Controllers
         [HttpPost]
         public ActionResult Login(string ID, string Password)
         {
-            DBContext db = new DBContext();
-            int Id = int.Parse(ID);
-            if (ID[..1] == "1")
+            if (ModelState.IsValid)
             {
-                // Admin admin = db.Admins.SingleOrDefault(a => a.AdminId.ToString() == ID);
-                // //if (account.Password == password)
-                // //    Debug.WriteLine("Í¨¹ý");
-                // if (admin != null && admin.AdminPassword == Password)
-                // {
-                //     HttpContext.Session.SetString("isLogin", "true");
-                //     Response.Clear();
-                //     return RedirectToAction("MainBoard", "Main");
-                // }
-                // else
-                // {
-                //     TempData["identity"] = "manager";
-                //     return View();
-                // }
-                return View("MainBoard", "Main");
-            }
-            else
-            {
-                Custom? custom = db.Custom.SingleOrDefault(a => a.Id == Id);
-                if (custom != null && custom.Password == Password)
+                DBContext db = new DBContext();
+                int Id = int.Parse(ID);
+                if (ID[..1] == "1")
                 {
-                    HttpContext.Session.SetString("isLogin", "true");
-                    Response.Clear();
-                    return RedirectToAction("MainBoard", "Main");
+                    Admin? admin = db.Admin.SingleOrDefault(a => a.Id.ToString() == ID);
+                    if (admin != null && admin.Password == Password)
+                    {
+                        HttpContext.Session.SetString("isLogin", "true");
+                        HttpContext.Session.SetString("identity", "admin");
+                        return RedirectToAction("MainBoard", "Main");
+                    }
+                    else
+                    {
+                        return View();
+                    }
                 }
                 else
                 {
-                    TempData["identity"] = "custom";
-                    return View();
+                    Custom? custom = db.Custom.SingleOrDefault(a => a.Id == Id);
+                    if (custom != null && custom.Password == Password)
+                    {
+                        HttpContext.Session.SetString("isLogin", "true");
+                        HttpContext.Session.SetString("identity", "custom");
+                        return RedirectToAction("MainBoard", "Main");
+                    }
+                    else
+                    {
+                        return View();
+                    }
                 }
             }
+            else return View();
         }
         [HttpPost]
         public ActionResult Regist(Custom entry)
@@ -59,6 +58,7 @@ namespace BookStore.Controllers
             {
                 Domain.Service.CustomService.Register(entry);
                 HttpContext.Session.SetString("isLogin", "true");
+                HttpContext.Session.SetString("identity", "custom");
                 return RedirectToAction("MainBoard", "Main");
             }
             return View("Login");

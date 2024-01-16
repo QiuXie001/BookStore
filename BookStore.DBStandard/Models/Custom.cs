@@ -9,7 +9,7 @@ public partial class Custom
     public string Name { get; set; } = null!;
     public string Password { get; set; } = null!;
 
-    public string? Age { get; set; }
+    public int? Age { get; set; }
 
     public string Telephone { get; set; } = null!;
 

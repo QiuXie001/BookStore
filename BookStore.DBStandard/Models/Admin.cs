@@ -5,15 +5,15 @@ namespace BookStore.DBStandard.Models;
 
 public partial class Admin
 {
-    public int AdminId { get; set; }
+    public int Id { get; set; }
 
-    public string? AdminName { get; set; }
+    public string Name { get; set; } = null!;
 
-    public string AdminPassword { get; set; } = null!;
+    public string Password { get; set; } = null!;
 
-    public string? AdminAge { get; set; }
+    public int? Age { get; set; }
 
-    public string? AdminTelephone { get; set; }
+    public string Telephone { get; set; } = null!;
 
-    public string? AdminIdentityId { get; set; }
+    public string? IdentityId { get; set; }
 }

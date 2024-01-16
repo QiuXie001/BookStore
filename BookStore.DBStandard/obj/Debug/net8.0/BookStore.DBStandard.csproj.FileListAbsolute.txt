@@ -13,8 +13,8 @@ D:\Code\BookStore_new\bookstore.dbstandard\obj\Debug\net8.0\refint\BookStore.DBS
 D:\Code\BookStore_new\bookstore.dbstandard\obj\Debug\net8.0\BookStore.DBStandard.pdb
 D:\Code\BookStore_new\bookstore.dbstandard\obj\Debug\net8.0\BookStore.DBStandard.genruntimeconfig.cache
 D:\Code\BookStore_new\bookstore.dbstandard\obj\Debug\net8.0\ref\BookStore.DBStandard.dll
-D:\Project\BookStore\BookStore.DBStandard\bin\Debug\net8.0\BookStore.DBStandard.deps.json
-D:\Project\BookStore\BookStore.DBStandard\bin\Debug\net8.0\BookStore.DBStandard.runtimeconfig.json
+d:\Project\BookStore\BookStore.DBStandard\bin\Debug\net8.0\BookStore.DBStandard.deps.json
+d:\Project\BookStore\BookStore.DBStandard\bin\Debug\net8.0\BookStore.DBStandard.runtimeconfig.json
 d:\Project\BookStore\BookStore.DBStandard\bin\Debug\net8.0\BookStore.DBStandard.dll
 d:\Project\BookStore\BookStore.DBStandard\bin\Debug\net8.0\BookStore.DBStandard.pdb
 d:\Project\BookStore\BookStore.DBStandard\obj\Debug\net8.0\BookStore.DBStandard.csproj.AssemblyReference.cache
@@ -26,5 +26,5 @@ d:\Project\BookStore\BookStore.DBStandard\obj\Debug\net8.0\BookStore.DBStandard.
 d:\Project\BookStore\BookStore.DBStandard\obj\Debug\net8.0\BookStore.DBStandard.dll
 d:\Project\BookStore\BookStore.DBStandard\obj\Debug\net8.0\refint\BookStore.DBStandard.dll
 d:\Project\BookStore\BookStore.DBStandard\obj\Debug\net8.0\BookStore.DBStandard.pdb
-D:\Project\BookStore\BookStore.DBStandard\obj\Debug\net8.0\BookStore.DBStandard.genruntimeconfig.cache
-D:\Project\BookStore\BookStore.DBStandard\obj\Debug\net8.0\ref\BookStore.DBStandard.dll
+d:\Project\BookStore\BookStore.DBStandard\obj\Debug\net8.0\BookStore.DBStandard.genruntimeconfig.cache
+d:\Project\BookStore\BookStore.DBStandard\obj\Debug\net8.0\ref\BookStore.DBStandard.dll

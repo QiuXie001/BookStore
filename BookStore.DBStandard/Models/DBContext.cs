@@ -6,6 +6,7 @@ namespace BookStore.DBStandard.Models;
 
 public partial class DBContext : DbContext
 {
+    public DbSet<Admin> Admin{ get;set;}
     public DbSet<Custom> Custom{ get;set;}
     
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
