@@ -3244,11 +3244,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "d:\\Project\\BookStore\\BookStore.DBStandard\\BookStore.DBStandard.csproj": {
-              "projectPath": "d:\\Project\\BookStore\\BookStore.DBStandard\\BookStore.DBStandard.csproj"
+            "D:\\Project\\BookStore\\BookStore.DBStandard\\BookStore.DBStandard.csproj": {
+              "projectPath": "D:\\Project\\BookStore\\BookStore.DBStandard\\BookStore.DBStandard.csproj"
             },
-            "d:\\Project\\BookStore\\BookStore.Domain\\BookStore.Domain.csproj": {
-              "projectPath": "d:\\Project\\BookStore\\BookStore.Domain\\BookStore.Domain.csproj"
+            "D:\\Project\\BookStore\\BookStore.Domain\\BookStore.Domain.csproj": {
+              "projectPath": "D:\\Project\\BookStore\\BookStore.Domain\\BookStore.Domain.csproj"
             }
           }
         }

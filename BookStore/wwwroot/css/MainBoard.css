@@ -60,8 +60,8 @@ body {
 
 .image,
 .icon {
-    min-height: 75px;
-    min-width: 75px;
+    min-height: 60px;
+    min-width: 60px;
     border-radius: 6px;
 }
 
@@ -168,7 +168,7 @@ header {
 }
 
 .menu {
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 li.search-box {
