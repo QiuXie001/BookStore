@@ -60,7 +60,8 @@ body {
 
 .image,
 .icon {
-    min-width: 60px;
+    min-height: 75px;
+    min-width: 75px;
     border-radius: 6px;
 }
 

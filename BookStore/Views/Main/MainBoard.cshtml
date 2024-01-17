@@ -44,14 +44,13 @@
 
             });
             @{
-                string? identity;
                 var myContext = (Microsoft.AspNetCore.Http.HttpContext)Context;
                 if (myContext.Session.GetString("identity") != null)
                 {
-                    identity = myContext.Session.GetString("identity");
+                    ViewBag.identity = myContext.Session.GetString("identity");
                 }
             }
-
+            var identity ="@ViewBag.identity";
             if (identity == "admin") {
                 $('.OnlyCustom').each(function () {
                     $(this).hide();
@@ -65,7 +64,7 @@
             else $('ul').hide();
             function LoadPersonalInformation() {
                 $.ajax({
-                    url: "/ControllerName/LoadPartialView",
+                    url: "/Personal/Information",
                     type: "GET",
                     success: function (result) {
                         $(".content").html(result);
@@ -83,7 +82,7 @@
             }
             function LoadShopCart() {
                 $.ajax({
-                    url: "/Cart/ShopCart",
+                    url: "/ShopCart/ShopCart",
                     type: "GET",
                     success: function (result) {
                         $(".content").html(result);
@@ -126,7 +125,7 @@
         <header>
             <div class="image-text">
                 <span class="image">
-                    <img src="./1.jpg" alt="">
+                    <img src="" alt="">
                 </span>
                 <div class="username logo-text">
                     <span class="name">Qiu</span>
