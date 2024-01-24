@@ -1,20 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data.Entity;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using BookStore.DBStandard;
-using BookStore.DBStandard.Models;
+﻿using BookStore.DBStandard.Models;
 
 namespace BookStore.Domain.Service
 {
-    public class CustomService
+    public class CustomService(DBContext dbContext)
     {
-        public DBContext DbContext { get; set; }
-        public CustomService(DBContext dbContext)
-        {
-            DbContext = dbContext;
+        public DBContext DbContext { get; set; } = dbContext;
+        public static Custom? GetCustomById(int Id) 
+        {   
+            var db = new DBContext();
+            var custom = db.Custom.SingleOrDefault(a => a.Id == Id);
+            return custom;
         }
         public List<Custom> GetAll()
         {

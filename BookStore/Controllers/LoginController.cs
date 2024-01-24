@@ -18,11 +18,10 @@ namespace BookStore.Controllers
         {
             if (ModelState.IsValid)
             {
-                DBContext db = new DBContext();
                 int Id = int.Parse(ID);
                 if (ID[..1] == "1")
                 {
-                    Admin? admin = db.Admin.SingleOrDefault(a => a.Id.ToString() == ID);
+                    Admin? admin = Domain.Service.AdminService.GetAdminById(Id);
                     if (admin != null && admin.Password == Password)
                     {
                         HttpContext.Session.SetString("isLogin", "true");
@@ -36,7 +35,7 @@ namespace BookStore.Controllers
                 }
                 else
                 {
-                    Custom? custom = db.Custom.SingleOrDefault(a => a.Id == Id);
+                    Custom? custom = Domain.Service.CustomService.GetCustomById(Id);
                     if (custom != null && custom.Password == Password)
                     {
                         HttpContext.Session.SetString("isLogin", "true");

@@ -16,4 +16,5 @@ public partial class Admin
     public string Telephone { get; set; } = null!;
 
     public string? IdentityId { get; set; }
+
 }
